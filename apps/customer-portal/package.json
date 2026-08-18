@@ -1,0 +1,42 @@
+{
+  "name": "@app/customer-portal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ionic/react": "^8.4.1",
+    "@ionic/react-router": "^8.4.1",
+    "ionicons": "^7.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^5.3.4",
+    "react-router-dom": "^5.3.4",
+    "i18next": "^25.2.1",
+    "react-i18next": "^15.5.2",
+    "@app/shared-ui": "workspace:*",
+    "@app/shared-types": "workspace:*",
+    "@app/shared-utils": "workspace:*",
+    "@app/module-claims": "workspace:*",
+    "@app/module-policy": "workspace:*",
+    "@app/module-portfolio": "workspace:*",
+    "@app/module-payment": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.5.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.1"
+  }
+}

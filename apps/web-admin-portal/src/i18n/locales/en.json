@@ -1,0 +1,21 @@
+{
+  "common": {
+    "appName": "App Admin",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "featureFlags": {
+    "title": "Feature Flags",
+    "enable": "Enable",
+    "disable": "Disable"
+  },
+  "auditLog": {
+    "title": "Audit Log",
+    "noEntries": "No audit log entries found"
+  }
+}

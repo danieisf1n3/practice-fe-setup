@@ -1,0 +1,15 @@
+{
+  "name": "@app/shared-utils",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@app/shared-types": "workspace:*"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "fe-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "App Frontend Monorepo - Customer Portal & Web Admin Portal",
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev:customer": "turbo run dev --filter=@app/customer-portal",
+    "dev:admin": "turbo run dev --filter=@app/web-admin-portal",
+    "build": "turbo run build",
+    "build:customer": "turbo run build --filter=@app/customer-portal",
+    "build:admin": "turbo run build --filter=@app/web-admin-portal",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,json,css,md}\""
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "eslint": "^10.8.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "prettier": "^3.9.6",
+    "turbo": "^2.10.10",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
